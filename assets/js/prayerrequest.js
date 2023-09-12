@@ -34,8 +34,14 @@ form.addEventListener('submit', function(e){
             email.value=''
             heading.value=''
               message.value=''
-              window.scrollTo(0,0)
+              window.scrollTo(80,280)
            }
+
+           setTimeout(function() {
+            alert.style.display = 'none';
+            success.style.display = 'none';
+          }, 2000);
+        
           
           // Handle the successful response here
           console.log("API Response:", data);

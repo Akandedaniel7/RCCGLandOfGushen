@@ -1,64 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @media all and (max-width: 550px) {
   .general_text_div h1 {
     font-size: 40px !important ;
   }
 }
 
-.non-clickable-pointer a{
+.picp_about_img img {
+  width: 100% !important;
+}
+
+.non-clickable-pointer a {
   pointer-events: none !important;
   cursor: default !important;
 }
 /* ***********************
 who we are 
  *********************** */
- .who_we_are-flex{
+.who_we_are-flex {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
- }
- 
- .wo_we_are-flex1 img{
+}
+
+.wo_we_are-flex1 img {
   width: 70%;
   border-radius: 50%;
   margin-bottom: 20px;
- }
+}
 
- .wo_we_are-flex1 h3{
-  font-family: 'Satisfy', cursive;
- }
+.wo_we_are-flex1 h3 {
+  font-family: "Satisfy", cursive;
+}
 
- .wo_we_are-flex1 p{
+.wo_we_are-flex1 p {
   text-align: center;
- }
+}
 
- .who_we_are-flex2-content h3{
-  font-family: 'Satisfy', cursive;
- }
+.who_we_are-flex2-content h3 {
+  font-family: "Satisfy", cursive;
+}
 
- .wo_we_are-flex2{
+.wo_we_are-flex2 {
   flex-basis: 100%;
- }
+}
 
- .wo_we_are-flex1{
+.wo_we_are-flex1 {
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
- }
+}
 
- .who_we_are-flex2-content_p{
+.who_we_are-flex2-content_p {
   padding-bottom: -20px;
   margin-bottom: -20px;
- }
+}
 
- .wo_we_are-social-media i{
+.wo_we_are-social-media i {
   font-size: 23px;
+}
 
- }
-
- @media all and (max-width: 978px) {
-  .who_we_are-flex{
+@media all and (max-width: 978px) {
+  .who_we_are-flex {
     display: block;
   }
 
@@ -66,83 +69,83 @@ who we are
     width: 50%;
   }
 
-  .wo_we_are-flex1{
+  .wo_we_are-flex1 {
     margin-bottom: 30px;
   }
- }
+}
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
 .alt-services .img-bg {
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
-  }
-  
-  .alt-services h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 9px;
-    padding-bottom: 9px;
-    position: relative;
-  }
-  
-  .alt-services h3:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #d01d3f;
-    left: 0;
-    bottom: 0;
-  }
-  
-  .alt-services .icon-box {
-    margin-top: 50px;
-  }
-  
-  .alt-services .icon-box i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-primary);
-    margin-right: 25px;
-    font-size: 28px;
-    width: 56px;
-    height: 56px;
-    border-radius: 4px;
-    line-height: 0;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
-    background-color: #fff;
-    transition: 0.3s;
-  }
-  
-  .alt-services .icon-box:hover i {
-    background-color: #e43c5c;
-    color: #fff;
-  }
-  
-  .alt-services .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .alt-services .icon-box h4 a {
-    color: #000;
-    transition: 0.3s;
-  }
-  
-  .alt-services .icon-box h4 a:hover {
-    color: #e43c5c;
-  }
-  
-  .alt-services .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+}
+
+.alt-services h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  padding-bottom: 9px;
+  position: relative;
+}
+
+.alt-services h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #d01d3f;
+  left: 0;
+  bottom: 0;
+}
+
+.alt-services .icon-box {
+  margin-top: 50px;
+}
+
+.alt-services .icon-box i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-right: 25px;
+  font-size: 28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  line-height: 0;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.alt-services .icon-box:hover i {
+  background-color: #e43c5c;
+  color: #fff;
+}
+
+.alt-services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.alt-services .icon-box h4 a {
+  color: #000;
+  transition: 0.3s;
+}
+
+.alt-services .icon-box h4 a:hover {
+  color: #e43c5c;
+}
+
+.alt-services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
 
 /*--------------------------------------------------------------
 # Service Details
@@ -219,43 +222,43 @@ who we are
 .service-details .card:hover .card-body .card-title a {
   color: #d01d3f;
 }
-  
-  /* btn gennral  */
-  .btn-part{
-    border: 2px solid #e43c5c !important;
-    background: transparent !important;
-    border-radius: 2px;
-    color: #e43c5c !important;
-    padding: 12px 20px;
-    font-weight: 700;
-  }
 
-  .btn-part:hover{
-    background: transparent !important;
-  }
+/* btn gennral  */
+.btn-part {
+  border: 2px solid #e43c5c !important;
+  background: transparent !important;
+  border-radius: 2px;
+  color: #e43c5c !important;
+  padding: 12px 20px;
+  font-weight: 700;
+}
 
-  /* About   */
-  .about_banner{
-    background-image: linear-gradient(#d01d3f, #ea6981);
-    /* background: #d01d3f; */
-    padding: 120px 90px;
-  }
+.btn-part:hover {
+  background: transparent !important;
+}
 
-  .about_banner h3{
-    line-height: 40px;
-  }
+/* About   */
+.about_banner {
+  background-image: linear-gradient(#d01d3f, #ea6981);
+  /* background: #d01d3f; */
+  padding: 120px 90px;
+}
 
-  @media all and (max-width: 750px) {
-    .about_banner{
-      padding: 90px 60px;
-    }
-    .picp_about{
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
+.about_banner h3 {
+  line-height: 40px;
+}
 
-.picp_about{
+@media all and (max-width: 750px) {
+  .about_banner {
+    padding: 90px 60px;
+  }
+  .picp_about {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.picp_about {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
@@ -280,26 +283,68 @@ who we are
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/hero-bg.jpg") center top no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
 }
 
-.livestream_hero::after{
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/livestream_image.png") center top no-repeat !important;
+.livestream_hero::after {
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/livestream_image.png") center top no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
 }
 
-.children_hero::after{
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/children-3.webp") center top no-repeat !important;
+.children_hero::after {
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/children-3.webp") center top no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
 }
 
-.teens_hero::after{
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/teens-4.webp") center top no-repeat !important;
+.teens_hero::after {
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/teens-4.webp") center top no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.women_hero::after {
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/women.webp") center top no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.men_hero::after {
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/men-homw.webp") center top no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
 }
@@ -432,20 +477,26 @@ who we are
   }
 }
 
- .general_text_div h1{
+.general_text_div h1 {
   color: #fff;
-  font-size: 58px ;
- }
+  font-size: 58px;
+}
 
- .general_text_div h5{
-  color: #fff ;
- }
+.general_text_div h5 {
+  color: #fff;
+}
 
+.eventheader,
+.housefelloship,
+.elders {
+  pointer-events: none;
+  cursor: default;
+}
 
- /* ******
+/* ******
  Fellowship  
- ******* */ 
- .fellowship a{
+ ******* */
+.fellowship a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,18 +508,17 @@ who we are
   font-weight: 700;
   box-shadow: 2px 2px 2px #d01d3f;
   border-radius: 6px;
- }
+}
 
- .text_women_center{
+.text_women_center {
   text-align: center;
-  padding-top: 20px ;
- }
+  padding-top: 20px;
+}
 
-
- /* ************
+/* ************
  Teens
  ************ */
- .teensimage{
+.teensimage {
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
   grid-gap: 1rem; */
@@ -476,51 +526,50 @@ who we are
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin-top: 30px;
- }
+}
 
- .teensimage_items{
+.teensimage_items {
   width: 100%;
- }
+}
 
- @media all and (max-width: 750px) {
-  .teensimage{
+@media all and (max-width: 750px) {
+  .teensimage {
     grid-template-columns: repeat(2, 1fr);
   }
- }
+}
 
- .teens_meetings h3{
+.teens_meetings h3 {
   text-align: center;
- }
+}
 
- .teens_meetings h5{
+.teens_meetings h5 {
   padding: 30px 0;
- }
+}
 
- /* *****************
+/* *****************
    What sunday's like
  ****************** */
-
 
 /* *****************
    Testimony
  ****************** */
- .star{
+.star {
   color: #d01d3f;
- }
+}
 
- .testimony_general {
+.testimony_general {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
- }
+}
 
- .testimony_general label{
+.testimony_general label {
   margin-bottom: 16px;
   font-weight: 700;
- }
+}
 
 .testimony_general input,
-.testimony_general textarea{
+.testimony_general textarea {
   border: 0.1px solid #777777;
   outline: none;
   padding: 9px;
@@ -530,11 +579,11 @@ who we are
 }
 
 .testimony_general input:focus,
-.testimony_general textarea:focus{
+.testimony_general textarea:focus {
   border: 0.1px solid #d01d3f;
 }
 
-.testimony_submit{
+.testimony_submit {
   border: none;
   outline: none;
   background: #e43c5c;
@@ -542,14 +591,14 @@ who we are
   padding: 12px;
   border-radius: 6px;
   font-weight: 600;
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
 }
 
-.testimony_submit:hover{
+.testimony_submit:hover {
   background: #ea6981;
 }
 
-.tesertiony_browseFile h4{
+.tesertiony_browseFile h4 {
   font-weight: 700;
 }
 
@@ -557,7 +606,7 @@ who we are
   margin-top: 20px;
 }
 
-.testimony_social-media i{
+.testimony_social-media i {
   padding: 9px;
   color: #fff;
   background: #d01d3f;
@@ -565,7 +614,7 @@ who we are
 }
 
 /* prayer request  */
-.biblic_text{
+.biblic_text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -574,16 +623,16 @@ who we are
   position: relative;
 }
 
-.biblic_text::before{
-   content: "";
-   background: #777777;
-   position: absolute;
-   width: 80%;
-   height: 1px;
-   top: -20px;
+.biblic_text::before {
+  content: "";
+  background: #777777;
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  top: -20px;
 }
 
-.biblic_text::after{
+.biblic_text::after {
   content: "";
   background: #777777;
   position: absolute;
@@ -592,46 +641,44 @@ who we are
   bottom: -20px;
 }
 
-.prayer_flex{
+.prayer_flex {
   display: flex;
   gap: 25px;
 }
 
-.prayer_general{
+.prayer_general {
   margin: 10px 0;
 }
 
 .prayer_general input,
-.prayer_general textarea{
-   padding: 15px 12px;
-   width: 100% !important;
-   border: none;
-   outline: none;
-   background: #f4f7f9;
-   border-radius: 5px;
-   color: #444444;
-   font-weight: 550;
-
+.prayer_general textarea {
+  padding: 15px 12px;
+  width: 100% !important;
+  border: none;
+  outline: none;
+  background: #f4f7f9;
+  border-radius: 5px;
+  color: #444444;
+  font-weight: 550;
 }
 
 .prayer_name,
-.prayer_email{
+.prayer_email {
   flex: 1;
 }
 
-.prayer_name input, 
-.prayer_email input{
-   width: 100% !important;
-   max-width: 100%;
+.prayer_name input,
+.prayer_email input {
+  width: 100% !important;
+  max-width: 100%;
 }
 
-
-.prayer_form{
+.prayer_form {
   margin-top: 20px;
 }
 
 @media all and (max-width: 830px) {
-  .prayer_flex{
+  .prayer_flex {
     display: block;
   }
 
@@ -642,18 +689,18 @@ who we are
     flex-direction: column;
     padding: 3px 1px;
     position: relative;
-}
+  }
 
-.biblic_text h4{
-  margin-top: 30px;
-}
-.prayer_form{
-  margin-top: 70px;
-}
+  .biblic_text h4 {
+    margin-top: 30px;
+  }
+  .prayer_form {
+    margin-top: 70px;
+  }
 
-.events {
-  margin-left: 0px !important;
-}
+  .events {
+    margin-left: 0px !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -772,7 +819,7 @@ who we are
   margin: 0;
 }
 
-.gallery-wrap img{
+.gallery-wrap img {
   width: 100% !important;
   object-fit: fill;
 }
@@ -819,23 +866,20 @@ who we are
 /* *********
 Livestrean
 ******** */
-.livestream_youtube{
+.livestream_youtube {
   /* align-items: center !important;
   display: flex !important;
   justify-content: center !important;
   flex-direction: column; */
-
 }
 
-
-
-.livestream_youtube iframe{
+.livestream_youtube iframe {
   width: 100% !important;
   height: 85vh !important;
 }
 
 @media all and (max-width: 750px) {
-  .livestream_youtube iframe{
+  .livestream_youtube iframe {
     height: 65vh !important;
   }
 }
@@ -843,16 +887,16 @@ Livestrean
 /* ****************
 Online Giving
 ****************** */
-.online_giving img{
+.online_giving img {
   width: 100%;
 }
 
-.tithe{
+.tithe {
   margin-top: 40px;
   position: relative;
 }
 
-.tithe::after{
+.tithe::after {
   content: "";
   background: #d01d3f;
   width: 100%;
@@ -869,35 +913,35 @@ Online Giving
 }
 
 .tithe_flex a,
-.offering_flex a{
+.offering_flex a {
   background: #e43c5c;
   color: #fff;
   padding: 12px 20px;
   border-radius: 6px;
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
 }
 
 .tithe_flex a:hover,
-.offering_flex a:hover{
-  background: #ea6981
+.offering_flex a:hover {
+  background: #ea6981;
 }
 
-.offering_flex{
+.offering_flex {
   margin-top: 80px;
 }
 
 @media all and (max-width: 770px) {
   .tithe_flex,
-.offering_flex{
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+  .offering_flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-.tithe_flex a,
-.offering_flex a{
-  margin-top: 8rem;
-}
+  .tithe_flex a,
+  .offering_flex a {
+    margin-top: 8rem;
+  }
 }
 
 /* **************
@@ -921,8 +965,8 @@ Online Giving
   margin-top: 16px;
 }
 
- /* for mobile */
- @media screen and (max-width: 767px){
+/* for mobile */
+@media screen and (max-width: 767px) {
   .whatsapp-icon {
     margin-top: 12px;
   }
@@ -933,7 +977,6 @@ Online Giving
     left: 10px;
     font-size: 25px;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -1011,39 +1054,38 @@ Online Giving
 /*=================
    404 Not Found
 ====================*/
-.pageflex{
+.pageflex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
-.pageflex img{
+.pageflex img {
   width: 100%;
 }
 
-.pagefle-ii{
+.pagefle-ii {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.pagefle-ii img{
+.pagefle-ii img {
   width: 20%;
   margin-bottom: 20px;
 }
 
-.pagefle-ii h3{
+.pagefle-ii h3 {
   letter-spacing: 4px;
   font-weight: 900;
 }
 
-.pagefle-ii p{
+.pagefle-ii p {
   font-weight: 700;
 }
 
-.pagefle-ii a{
+.pagefle-ii a {
   background: #d01d3f;
   color: #fff;
   padding: 12px 45px;
@@ -1051,24 +1093,24 @@ Online Giving
   border: 1px solid #d01d3f;
 }
 
-.pagefle-ii a:hover{
+.pagefle-ii a:hover {
   background: #fff;
   color: #d01d3f;
 }
 
-@media all and  (max-width: 750px) {
-  .pageflex{
+@media all and (max-width: 750px) {
+  .pageflex {
     display: block;
   }
 }
 
-.seemore{
+.seemore {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.seemore a{
+.seemore a {
   color: #d01d3f;
 }
 
