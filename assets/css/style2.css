@@ -763,9 +763,9 @@ who we are
 .prayer_general textarea {
   padding: 15px 12px;
   width: 100% !important;
-  border: none;
+  border: 1px solid #abb4ba;
+  background: transparent;
   outline: none;
-  background: #f4f7f9;
   border-radius: 5px;
   color: #444444;
   font-weight: 550;
@@ -780,6 +780,8 @@ who we are
 .prayer_email input {
   width: 100% !important;
   max-width: 100%;
+  border: 1px solid #abb4ba;
+  background: transparent
 }
 
 .prayer_form {
@@ -1021,22 +1023,31 @@ Online Giving
   align-items: center;
 }
 
-.tithe_flex a,
-.offering_flex a {
+.tithe_flex button,
+.offering_flex button {
   background: #e43c5c;
   color: #fff;
   padding: 12px 20px;
   border-radius: 6px;
   transition: ease-in-out 0.4s;
+  border: none;
 }
 
-.tithe_flex a:hover,
-.offering_flex a:hover {
+.tithe_flex button:hover,
+.offering_flex button:hover {
   background: #ea6981;
 }
 
 .offering_flex {
   margin-top: 80px;
+}
+
+.offering{
+  margin-top: 80px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media all and (max-width: 770px) {
@@ -1047,10 +1058,15 @@ Online Giving
     justify-content: flex-start;
   }
 
-  .tithe_flex a,
-  .offering_flex a {
+  .tithe_flex button,
+  .offering_flex button {
     margin-top: 8rem;
   }
+
+  .tithe_flex button,
+.offering_flex button {
+  margin-top: 40px;
+}
 }
 
 /* **************
