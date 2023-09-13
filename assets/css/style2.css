@@ -624,11 +624,11 @@ who we are
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3498db;
+  border: 1px solid #e43c5c;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #e43c5c;
 }
 
 
