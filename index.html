@@ -254,7 +254,7 @@
                     <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
                         <div class="card">
                             <div class="card-img">
-                                <img src="assets/img/unsplash1.webp" alt=" ...">
+                                <img src="assets/img/unsplash1.webp" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title"><a href="">Have Kids?</a></h5>
@@ -311,7 +311,7 @@
             </div>
         </section>
         <!-- End Cta Section -->
-
+        html> should be included inside the index.html
 
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials section-bg">
@@ -325,6 +325,40 @@
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper" id="swipee">
 
+
+                        <!-- <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <h3>ELizabeth</h3>
+                                    <h4>Journalist </h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Yeah! church is really doing a great Job. Their service is faster and
+                                        reliable. It's
+                                        a good deal having service from DevelopIQ and I look forward for more!
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <h3>MilesStone</h3>
+                                    <h4>Architect</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        They are Smart, Intelligent, and Vibrant when it comes to IT solutions. I
+                                        recommend
+                                        the company for any IT needs. My experience with the company was superb just
+                                        like the name, they are
+                                        to smart!!!
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>End testimonial item -->
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -348,7 +382,8 @@
                     </div>
                     <div class="col-lg-6">
                         <form id="form">
-                            <input type="email" name="email"><input id='newletterbtn' type="submit" value="Subscribe">
+                            <input type="email" id="email" name="email" required>
+                            <input id='newletterbtn' type="submit" value="Subscribe">
                         </form>
                     </div>
                 </div>
@@ -438,10 +473,61 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src='assets/js/Data.js'></script>
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+    var forms = document.getElementById('form')
+    var mail = document.getElementById('email')
+
+    forms.addEventListener('submit', function(e) {
+        e.preventDefault()
+
+
+        $(document).ready(function() {
+
+            var apiUrl = 'https://danielad7.pythonanywhere.com/api/new-letter/'
+            var senddata = {
+                'email': mail.value,
+                csrfmiddlewaretoken: '{{ csrf_token }}'
+
+
+            }
+
+            $.ajax({
+                url: apiUrl,
+                type: "GET",
+                data: senddata,
+
+                success: function(data) {
+
+                    alert('subcribed sucessfully')
+                    mail.value = ''
+
+
+                    // Handle the successful response here
+                    console.log("API Response:", data);
+
+
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors here
+                    console.error("Error:", status, error);
+                }
+            });
+
+
+
+
+
+
+        });
+
+
+
+
+    })
+
+
     $(document).ready(function() {
 
         var apiUrl = 'https://danielad7.pythonanywhere.com/api/testimonial'
