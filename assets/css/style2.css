@@ -231,6 +231,11 @@ who we are
   color: #e43c5c !important;
   padding: 12px 20px;
   font-weight: 700;
+  margin-top: 10%;
+}
+
+.wordvision {
+  margin-bottom: 10% !important;
 }
 
 .btn-part:hover {
