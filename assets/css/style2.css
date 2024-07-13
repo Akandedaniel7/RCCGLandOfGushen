@@ -73,6 +73,105 @@ who we are
     margin-bottom: 30px;
   }
 }
+
+
+/* pdf Section - Home Page
+------------------------------*/
+.pdf .pdf-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.pdf .pdf-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+}
+
+.pdf .pdf-filters li:hover,
+.pdf .pdf-filters li.filter-active {
+  color: orange;
+  background-color: blue;
+}
+
+.pdf .pdf-filters li:first-child {
+  margin-left: 0;
+}
+
+.pdf .pdf-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .pdf .pdf-filters li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.pdf .pdf-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.pdf .pdf-item .pdf-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: rgb(255, 255, 255, 0.9);
+  padding: 15px;
+}
+
+.pdf .pdf-item .pdf-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.pdf .pdf-item .pdf-info p {
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+
+.pdf .pdf-item:hover .pdf-info {
+  opacity: 1;
+  bottom: 0;
+}
+.pdf-info button{
+  border: none;
+  background: #d01d3f;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 17px;
+  opacity: 0.9;
+}
+
+.pdf-info button:hover{
+    background-color: #d01d3f;
+    opacity: 8;
+}
+
+.publication{
+  display: flex !important;
+}
+
+
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/

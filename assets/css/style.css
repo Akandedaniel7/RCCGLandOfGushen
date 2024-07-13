@@ -705,7 +705,7 @@ section {
 .cta .cta-btn:hover {
   background: #e43c5c;
   border: 2px solid #e43c5c;
-}
+}      
 
 @media (min-width: 1024px) {
   .cta {

@@ -31,7 +31,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style2.css">
+    <link href="assets/css/style2.css" rel="stylesheet">
 
     <!-- Whatsapp Chatbot -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -108,7 +108,7 @@
 
             <div class="carousel-item active">
                 <div class="carousel-container general_text_div">
-                    <h1>404</h1>
+                    <h1>publication</h1>
                     <h5><b>Page not found</b></h5>
                 </div>
             </div>
@@ -118,10 +118,27 @@
 
     <main id="main">
 
-        <div class="container">
-            <h1>Download PDF</h1>
-            <a href="" download="sample.pdf" id="downloadLink">Click here to download</a>
-        </div>
+    <section id="pdf" class="pdf">
+
+<!--  Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>PDf</h2>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div>
+
+
+    <div  class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div  id="pdf-parent" class="row gy-4 isotope-container publication" data-aos="fade-up" data-aos-delay="200">
+    </div>
+    </div>
+    </div>
+
+
+
+</section>
+   
+        
     </main>
 
     <!-- ======= Footer ======= -->
@@ -209,7 +226,7 @@
                 &copy; Copyright <strong><span>LP85</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Designed by <a href="https://developiq.org">DevelopIQ</a>
+                Designed by <a href="https://developiq.org" target="_blank">Develop-IQ Technologies</a>
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -229,6 +246,45 @@
     <!-- Template Main JS File -->
     <script src="assets/js/Data.js"></script>
     <script src=" assets/js/main.js"></script>
+    <script src="assets/js/Pdf.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    fetch("https://danielad7.pythonanywhere.com/api/pdf/")
+        .then(response => response.json())
+        .then(data => {
+            const pdfParent = document.querySelector("#pdf-parent");
+            data.forEach(pdfItem => {
+                // Check if 'img' and 'pdfs' properties exist and are valid
+                if (pdfItem.img && pdfItem.pdfs) {
+                    const pdfItemDiv = document.createElement("div");
+                    pdfItemDiv.innerHTML = `
+                            <div class="col-lg-4 col-md-6 pdf-item isotope-item filter-app">
+                                <img src="https://danielad7.pythonanywhere.com/${pdfItem.img}" class="img-fluid" alt="${pdfItem.title}">
+                                <div class="pdf-info">
+                                    <h4>${pdfItem.title}</h4>
+                                    <a href="https://danielad7.pythonanywhere.com${pdfItem.pdfs}" target="_blank" rel="noopener noreferrer" download>
+                                        <button class="btn btn-primary">Download</button>
+                                    </a>
+                                </div>
+                            </div>
+                        `;
+                    pdfParent.appendChild(pdfItemDiv);
+                } else {
+                    console.error("Invalid data in the API response:", pdfItem);
+                }
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching PDF data:", error);
+        });
+});
+
+
+</script>
+
+
+
+
 
 </body>
 
